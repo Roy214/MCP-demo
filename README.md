@@ -6,15 +6,23 @@ This is a demo project where I have created two MCP model server two test MultiS
 - Client is client.py
 
 # Set up environment
- - Install Cursor
-  ~~~
-  https://www.cursor.com/
-  ~~~
-- For handling virtutal env `uv` has been used.
-  ~~~
-  uv init
-  uv venv
-  source .venv/bin/activate
-  uv add -r requirements.txt
-  ~~~
+ 1] Install Cursor https://www.cursor.com/
+  
+2] Clone the repo:
+   ```bash
+   git clone https://github.com/your-org/mcp-demo.git
+   cd mcp-demo
+   ```
 
+3] For handling virtutal env `uv` has been used.
+   ```bash
+   uv init
+   uv venv
+   source .venv/bin/activate
+   uv add -r requirements.txt
+
+4] Create a .env file:
+   ```bash
+   cat .env 
+   GROQ_API_KEY = "gsk_xxx"% 
+   ```
