@@ -2,7 +2,7 @@
 MCP is an open protocol that standardizes how applications provide context to LLMs. https://modelcontextprotocol.io/introduction
 
 This is a demo project where I have created two MCP model server two test MultiServerMCPClient.
-- MCP servers are weather-server.py and mathserver.py
+- MCP servers are weather-server.py and math-server.py
 - Client is client.py
 - LLM used **qwen-qwq-32b**
 
