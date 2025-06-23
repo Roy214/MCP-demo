@@ -12,10 +12,6 @@ def subtract(a: int, b: int) -> int:
     """Subtract two numbers"""
     return a - b
 
-@mcp.tool()
-def multplication(a: int, b: int) -> int:
-    """Multiply two numbers"""
-    return a * b
 
 if __name__ == "__main__":
     # The transport is the protocol that the server will use to communicate with the client.
