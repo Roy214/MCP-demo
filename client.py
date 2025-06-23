@@ -12,7 +12,7 @@ async def main():
         {
             "math":{
                 "command":"python",
-                "args":["mathserver.py"], ## Ensure correct absolute path
+                "args":["math-server.py"], ## Ensure correct absolute path
                 "transport":"stdio",
             
             },
