@@ -1,3 +1,5 @@
+import argparse
+
 from langchain_mcp_adapters.client import MultiServerMCPClient
 from langgraph.prebuilt import create_react_agent
 from langchain_groq import ChatGroq
@@ -8,6 +10,11 @@ load_dotenv()
 import asyncio
 
 async def main():
+    DEFAULT_CITY="Bengaluru"
+    parser = argparse.ArgumentParser(description="AI weather agent.")
+    parser.add_argument("--city", type=str, help="Optional city for request.", default=DEFAULT_CITY)
+    args = parser.parse_args()
+
     client=MultiServerMCPClient(
         {
             "math":{
@@ -40,7 +47,7 @@ async def main():
     print("Math response:", math_response['messages'][-1].content)
 
     weather_response = await agent.ainvoke(
-        {"messages": [{"role": "user", "content": "How is the weather in Bengaluru? provide the temperature in celsius and humidity?"}]}
+        {"messages": [{"role": "user", "content": f"How is the weather like in {args.city}? Please include temperature in Celsius and humidity."}]}
     )
     print("Weather response:", weather_response['messages'][-1].content)
 
