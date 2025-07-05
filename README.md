@@ -31,8 +31,8 @@ Use this demo to:
 4] Create a .env file:
    ```bash
    cat .env 
-   GROQ_API_KEY = "gsk_xxx"%
-   WEATHER_API_KEY = "9b0af6589b7f4xx"%                                                   
+   GROQ_API_KEY = "xxx"%
+   WEATHER_API_KEY = "xx"%                                                   
    ```
 # Run the code
 1] Keep the weather-server.py running 
